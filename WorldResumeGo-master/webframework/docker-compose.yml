@@ -1,0 +1,10 @@
+version: '3'
+services:
+  worldresume:
+    container_name: worldresume
+    build: .
+    environment:
+      - port=${port} 
+      - is_production=true
+    ports: 
+      - ${port}:${port}
